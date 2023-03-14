@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pagina web hecha con Bootstrap</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a href="#" class="navbar-brand">Logotipo</a>
+            <!-- Boton para el menu movil -->
+            <button
+                class="navbar-toggler"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#menu"
+                aria-controls="menu"
+                aria-expanded="false"
+                aria-label="Mostrar / Ocultar Menu"
+            >
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- Menu de navegacion -->
+            <div class="collapse navbar-collapse" id="menu">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item"><a href="#" class="nav-link">Inicio</a></li>
+
+                    <!-- Dropdown -->
+                    <li class="nav-item dropdown">
+                        <a 
+                            href="#"
+                            class="nav-link dropdown-toggle"
+                            role="button"
+                            data-bs-toggle="dropdown"
+                            aria-expanded="false"
+                            id="dropdown-menu"
+                        >
+                            Productos
+                        </a>
+
+                        <ul class="dropdown-menu" aria-labelledby="dropdown-menu">
+                            <li><a href="#" class="dropdown-item">Computadoras</a></li>
+                            <li><a href="#" class="dropdown-item">Laptops</a></li>
+                            <li><a href="#" class="dropdown-item">Smartphones</a></li>
+                            <li><a href="#" class="dropdown-item">Drones</a></li>
+                            <li><a href="#" class="dropdown-item">Accesorios</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-item"><a href="#" class="nav-link">Contacto</a></li>
+                </ul>
+
+                <!-- Buscador -->
+                <form action="" class="d-flex">
+                    <input type="search" class="form-control me-2" placeholder="Buscar" aria-label="Buscar">
+                    <button class="btn btn-primary" type="button">Buscar</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Cuerpo -->
+    <div class="container">
+        <div class="row mt-0">
+            <div class="col">
+
+                <!-- Carousel -->
+                <div class="carousel slide" id="mi-carousel" data-bs-ride="carousel">
+
+                    <!-- Cuerpo del carousel -->
+                    <div class="carousel-inner">
+                        <div class="carousel-item active" data-bs-interval="5000">
+                            <img src="img/s1.jpg" class="img-fluid w-100" alt="">
+                        </div>
+                        <div class="carousel-item" data-bs-interval="5000">
+                            <img src="img/s2.jpg" class="img-fluid w-100" alt="">
+                        </div>
+                        <div class="carousel-item" data-bs-interval="5000">
+                            <img src="img/s3.jpg" class="img-fluid w-100" alt="">
+                        </div>
+                    </div>
+
+                    <!-- Controles -->
+                    <button
+                        class="carousel-control-prev"
+                        type="button"
+                        data-bs-target="#mi-carousel"
+                        data-bs-slide="prev"
+                    >
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Anterior</span>
+                    </button>
+
+                    <button
+                        class="carousel-control-next"
+                        type="button"
+                        data-bs-target="#mi-carousel"
+                        data-bs-slide="next"
+                    >
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Siguiente</span>
+                    </button>
+
+                    <!-- Indicadores -->
+                    <div class="carousel-indicators">
+                        <button
+                            type="button"
+                            class="active"
+                            data-bs-target="#mi-carousel"
+                            data-bs-slide-to="0"
+                            aria-label="Slide 1"
+                        ></button>
+                        <button
+                            type="button"
+                            class=""
+                            data-bs-target="#mi-carousel"
+                            data-bs-slide-to="1"
+                            aria-label="Slide 2"
+                        ></button>
+                        <button
+                            type="button"
+                            class=""
+                            data-bs-target="#mi-carousel"
+                            data-bs-slide-to="2"
+                            aria-label="Slide 3"
+                        ></button>
+                    </div>
+                </div>
+
+                <!-- Galeria -->
+
+                    <!-- Titulo -->
+                <div class="row mt-5">
+                    <div class="col">
+                        <h2 class="h1 text-center">Galería</h1>
+                        <hr>
+                    </div>
+                </div>
+
+                    <!-- Imagenes -->
+                <div class="row mt-4">
+                        <div class="col-12 col-sm-6 col-lg-3 mb-4">
+                            <div class="card overflow-hidden">
+                                <div class="card-header m-0 p-0">
+                                    <img src="img/1.jpg" class="w-100" alt="">
+                                </div>
+                                <div class="card-body">
+                                    <h3 class="card-title">iPhone</h5>
+                                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+                                    <button type="button" class="btn btn-sm btn-primary">Comprar</button>
+                                    <button type="button" class="btn btn-sm btn-secondary">Detalles</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-6 col-lg-3 mb-4">
+                            <div class="card overflow-hidden">
+                                <div class="card-header m-0 p-0">
+                                    <img src="img/2.jpg" class="w-100" alt="">
+                                </div>
+                                <div class="card-body">
+                                    <h3 class="card-title">Mac</h5>
+                                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+                                    <button type="button" class="btn btn-sm btn-primary">Comprar</button>
+                                    <button type="button" class="btn btn-sm btn-secondary">Detalles</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-6 col-lg-3 mb-4">
+                            <div class="card overflow-hidden">
+                                <div class="card-header m-0 p-0">
+                                    <img src="img/3.jpg" class="w-100" alt="">
+                                </div>
+                                <div class="card-body">
+                                    <h3 class="card-title">Canon</h5>
+                                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+                                    <button type="button" class="btn btn-sm btn-primary">Comprar</button>
+                                    <button type="button" class="btn btn-sm btn-secondary">Detalles</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-6 col-lg-3 mb-4">
+                            <div class="card overflow-hidden">
+                                <div class="card-header m-0 p-0">
+                                    <img src="img/4.jpg" class="w-100" alt="">
+                                </div>
+                                <div class="card-body">
+                                    <h3 class="card-title">Apple Wach</h5>
+                                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+                                    <button type="button" class="btn btn-sm btn-primary">Comprar</button>
+                                    <button type="button" class="btn btn-sm btn-secondary">Detalles</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-6 col-lg-3 mb-4">
+                            <div class="card overflow-hidden">
+                                <div class="card-header m-0 p-0">
+                                    <img src="img/5.jpg" class="w-100" alt="">
+                                </div>
+                                <div class="card-body">
+                                    <h3 class="card-title">Keyboard</h5>
+                                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+                                    <button type="button" class="btn btn-sm btn-primary">Comprar</button>
+                                    <button type="button" class="btn btn-sm btn-secondary">Detalles</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-6 col-lg-3 mb-4">
+                            <div class="card overflow-hidden">
+                                <div class="card-header m-0 p-0">
+                                    <img src="img/6.jpg" class="w-100" alt="">
+                                </div>
+                                <div class="card-body">
+                                    <h3 class="card-title">iPad</h5>
+                                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+                                    <button type="button" class="btn btn-sm btn-primary">Comprar</button>
+                                    <button type="button" class="btn btn-sm btn-secondary">Detalles</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-6 col-lg-3 mb-2">
+                            <div class="card overflow-hidden">
+                                <div class="card-header m-0 p-0">
+                                    <img src="img/7.jpg" class="w-100" alt="">
+                                </div>
+                                <div class="card-body">
+                                    <h3 class="card-title">Macbook</h5>
+                                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+                                    <button type="button" class="btn btn-sm btn-primary">Comprar</button>
+                                    <button type="button" class="btn btn-sm btn-secondary">Detalles</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-6 col-lg-3 mb-2">
+                            <div class="card overflow-hidden">
+                                <div class="card-header m-0 p-0">
+                                    <img src="img/8.jpg" class="w-100" alt="">
+                                </div>
+                                <div class="card-body">
+                                    <h3 class="card-title">Cameras</h5>
+                                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+                                    <button type="button" class="btn btn-sm btn-primary">Comprar</button>
+                                    <button type="button" class="btn btn-sm btn-secondary">Detalles</button>
+                                </div>
+                            </div>
+                        </div>
+                </div>
+
+                <!-- Footer -->
+                <div class="row">
+                    <div class="col">
+                        <hr>
+                        <div class="row mt-5">
+                            <div class="col d-flex justify-content-between">
+                                <h5 class="text-muted">LuisCarmagnoli.com</h5>
+                                <a href="#" class="me-2">Subir en Página</a>
+                            </div>
+                        </div>
+                        <div class="row mt-3">
+                            <div class="col" style="height: 80px;">
+                                <a href="#" class="ms-3">Acerca de</a>
+                                <a href="#" class="ms-4">Contacto</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
